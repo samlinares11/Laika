@@ -1,0 +1,91 @@
+.catalogo-img{
+    height: 260px;
+    object-fit: cover;
+}
+
+.mini-card{
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (min-width: 992px){
+
+    .catalogo-img{
+        height: 100%;
+    }
+
+    .mini-card{
+        height: 220px;
+    }
+
+}
+
+
+
+.text-purple {
+    color: #5b3495;
+}
+
+.laika-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 330px 160px;
+    gap: 8px;
+}
+
+.laika-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-dog {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.img-app {
+    grid-column: 2;
+    grid-row: 1;
+    height: 160px !important;
+}
+
+.img-store {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.img-team {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: end;
+    height: 330px !important;
+    margin-top: 168px;
+}
+
+@media (max-width: 991px) {
+    .laika-gallery {
+        grid-template-rows: 260px 160px;
+    }
+
+    .img-team {
+        height: 260px !important;
+        margin-top: 168px;
+    }
+}
+
+@media (max-width: 576px) {
+    .laika-gallery {
+        grid-template-rows: 220px 130px;
+        gap: 6px;
+    }
+
+    .img-app {
+        height: 130px !important;
+    }
+
+    .img-team {
+        height: 220px !important;
+        margin-top: 136px;
+    }
+}
